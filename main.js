@@ -9,17 +9,30 @@ console.log(new Date)
 
 const displayDate = () => {
   const currentDate = new Date()
+  let currentDay = currentDate.getDay()
+  let currentTime = currentDate.getTime()
 
-  document.getElementById("display-element").innerHTML = currentDate;
+  console.log(new Date)
+
+  document.getElementById("display-element").innerHTML = "The current day is " + currentDay + " and the time is " + currentTime;
 }
  
 
 // Write a JavaScript program to convert a number to a string.
 
+const turnNumToString = (number) => {
+  let newString = number.toString()
+  return newString
+}
+
 
 
 // Write a JavaScript program to convert a string to the number.
 
+const turnStringToNum = (text) => {
+  let newNumber = Number(text)
+  return newNumber
+}
 
 
 // Write a JavaScript program that takes in different datatypes and prints out whether they are a:
@@ -30,21 +43,43 @@ const displayDate = () => {
   // * NaN
   // * String
   
+const displayDataType = (someVariable) =>{
+  const dataType = typeof someVariable
+  return someVariable + " is a " + dataType + " data type."
+}
 
   
 // Write a JavaScript program that adds 2 numbers together.
 
-
+const addNumbers = (x, y) => {
+  let sum = x + y
+  return sum
+}
 
 // Write a JavaScript program that runs only when 2 things are true.
 
+const bothTruthChecker = (check1, check2) =>{
+  if(check1 && check2){
+    return "This is true"
+  }
 
+}
 
 // Write a JavaScript program that runs when 1 of 2 things are true.
 
-
+const eitherTruthChecker = (check1, check2) =>{
+  if(check1 || check2){
+    return "At least one of these is true"
+  }
+}
 
 // Write a JavaScript program that runs when both things are not true.  
+
+const falseChecker = (check1, check2) =>{
+  if(!check1 && !check2){
+    return "Both of these are false"
+  }
+}
 
 // ***************************
 //         PART TWO
