@@ -21,18 +21,24 @@ const displayDate = () => {
 // Write a JavaScript program to convert a number to a string.
 
 const turnNumToString = (number) => {
-  let newString = number.toString()
-  return newString
+  console.log(number + " is a " + typeof number + " data type.")
+  number = number.toString()
+  console.log(number + " is now a " + typeof number + " data type.")
 }
+
+turnNumToString(7)
 
 
 
 // Write a JavaScript program to convert a string to the number.
 
 const turnStringToNum = (text) => {
-  let newNumber = Number(text)
-  return newNumber
+  console.log(text + " is a " + typeof text + " data type.")
+  text = Number(text)
+  console.log(text + " is now a " + typeof text + " data type.")
 }
+
+// turnStringToNum("6")
 
 
 // Write a JavaScript program that takes in different datatypes and prints out whether they are a:
@@ -45,7 +51,7 @@ const turnStringToNum = (text) => {
   
 const displayDataType = (someVariable) =>{
   const dataType = typeof someVariable
-  return someVariable + " is a " + dataType + " data type."
+  console.log(someVariable + " is a " + dataType + " data type.")
 }
 
   
@@ -53,14 +59,16 @@ const displayDataType = (someVariable) =>{
 
 const addNumbers = (x, y) => {
   let sum = x + y
-  return sum
+  console.log(`The sum of ${x} and ${y} equals ${sum}.`)
 }
+
+addNumbers(6, 22)
 
 // Write a JavaScript program that runs only when 2 things are true.
 
 const bothTruthChecker = (check1, check2) =>{
   if(check1 && check2){
-    return "This is true"
+    console.log("These values are both true.")
   }
 
 }
@@ -69,15 +77,16 @@ const bothTruthChecker = (check1, check2) =>{
 
 const eitherTruthChecker = (check1, check2) =>{
   if(check1 || check2){
-    return "At least one of these is true"
+    console.log("At least one of these values is true.")
   }
+ 
 }
 
 // Write a JavaScript program that runs when both things are not true.  
 
 const falseChecker = (check1, check2) =>{
   if(!check1 && !check2){
-    return "Both of these are false"
+    console.log("Both of these are false.")
   }
 }
 
