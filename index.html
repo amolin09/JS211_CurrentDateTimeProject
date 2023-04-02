@@ -11,5 +11,38 @@
     <div id="display-element"></div>
     <button onclick="displayDate()">Click Me</button>
     <hr/>
+    <div id="num-to-string1"></div>
+    <div id="num-to-string2"></div>
+    <button onclick="turnNumToString(8)">Number to String</button>
+    <hr/>
+    <div id="string-to-num1"></div>
+    <div id="string-to-num2"></div>
+    <button onclick="turnStringToNum('19')">String to Number</button>
+    <hr/>
+    <h2>This displays data types</h2>
+    <input id="input"><button onclick="displayDataType(document.getElementById('input').value)">Submit</button>
+    <div id="display-data-type"></div>
+    <hr/>
+    <h2>Add numbers</h2>
+    <div>Enter first number</div>
+    <div><input type="number" id="num-input1"></div>
+    <div>Enter second number</div>
+    <div><input type="number" id="num-input2"></div>
+    <div><button onclick="addNumbers(document.getElementById('num-input1').value, document.getElementById('num-input2').value)">Add</button></div>
+    <div id="sum-output"></div>
+    <hr/>
+    <h2>Check if numbers are even</h2>
+    <div>Enter first number</div>
+    <div><input type="number" id="even-input1"></div>
+    <div>Enter second number</div>
+    <div><input type="number" id="even-input2"></div>
+    <div><button onclick="bothEvenCheck(document.getElementById('even-input1').value, document.getElementById('even-input2').value)">Check even</button></div>
+    <div id="even-output"></div>
+    <hr/>
+    <button onclick="membershipCheck(true, false)">Click if you are a member</button>
+    <div id="membership-output"></div>
+    <hr/>
+    <button onclick="falseChecker(false, false)">This statement is true</button>
+    <div id="false-output"></div>
   </body>
 </html>
